@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+}
+
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"], input:focus, button:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+input {
+  -webkit-appearance: none;
+  resize: none;
+  border-radius: 0;
+}
+
+/* 移动端页面设计稿宽度 */
+/* 移动端页面设计稿dpr基准值 */
+/* 将移动端页面分为10块 */
+/* 缩放所支持的设备最小宽度 */
+/* 缩放所支持的设备最大宽度 */
+/*
+    rem与px对应关系，1rem代表html font-size值（为一块的宽度），$rem即为$px对应占多少块
+
+        $px                    $rem
+    -------------    ===    ------------
+    $design-width              $blocks
+*/
+/* html根元素的font-size定义，简单地将页面分为$blocks块，方便计算 */
+/* 单位px转化为rem */
+/* 单位rem转化为px，可用于根据rem单位快速计算原px */
+/**
+ * 实现固定宽高比
+ * @param  {string} $position: relative      定位方式
+ * @param  {string} $width:    100%          容器宽度
+ * @param  {string} $sub:      null          容器的目标子元素
+ * @param  {number} $aspectX:  1             容器宽
+ * @param  {number} $aspectY:  1             容器高
+ */
+/* 设置容器拉伸的最小宽度 */
+/* 设置容器拉伸的最大宽度 */
+/* 设置字体大小，不使用rem单位， 根据dpr值分段调整 */
+/* 清除浮动 */
+/*
+*$line:超出显示几行省略号
+*$substract:预留区域百分比
+*/
+html {
+  /* 最小宽度定义 */
+  /* 最大宽度定义 */
+}
+
+html body {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+}
+
+html[data-content-max] body[data-content-max] {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 750px;
+}
+
+html, body {
+  height: 100%;
+  border: 1px solid blue;
+}

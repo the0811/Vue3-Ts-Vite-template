@@ -1,0 +1,13 @@
+@import './reset.scss';
+@import './mixin.scss';
+@import './variables.scss';
+html {
+  @include root-font-size();  
+}
+
+
+html,body{
+height: 100%;
+border: 1px solid blue;
+}
+ 
